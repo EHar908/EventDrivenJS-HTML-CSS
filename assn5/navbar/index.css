@@ -1,0 +1,38 @@
+.navbar {
+    display: flex; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 16px; 
+    background-color: var(--secondary-color);
+    color: var(--color-on-secondary); 
+    justify-content: space-between; 
+    z-index: 999; 
+    border-bottom: 16px; 
+}
+
+.navbar .navbar-title-section {
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+.navbar .navbar-title-section .navbar-menu-button {
+    border: none; 
+    background: none; 
+    margin: 0; 
+    padding: 0; 
+    cursor: pointer; 
+}
+
+.navbar .navbar-link-section {
+    display: flex; 
+    align-items: center;
+    gap: 32px; 
+    cursor: pointer; 
+}
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="writeRecipeToFile.js" defer></script>
+    <script src="index.js" defer></script>
+    
+    
+    <title>Recipeasy</title>
+</head>
+<body>
+    <div class="header">
+        Recipeasy Recipe Builder
+    </div>
+    <div class="inputBar">
+        <input id="input0" type="text" placeholder="Recipe Title" aria-labelledby="input-recipe-name" aria-roledescription="Type the name of the recipe."/>
+    </div>
+    <div class="inputBar">
+        <input id="input1" type="text" placeholder="Ingredient name" aria-labelledby="input" aria-roledescription="Type the name of the ingredient and press enter. Focus on the ingredient and click or press space to delete it."/>
+        <div class="inputButton" id="button1" tabindex="0" role="button" aria-labelledby="input-button" aria-roledescription="Click or press enter to add an ingredient to the card.">ADD</div>
+    </div>
+    <section class="inputResults" id="inputResults1"></section>
+
+    <div class="inputBar">
+        <input id="input2" type="text" placeholder="Instruction" aria-labelledby="input" aria-roledescription="Type the instruction and press enter."/>
+        <div class="inputButton" id="button2" tabindex="0" role="button" aria-labelledby="input-button" aria-roledescription="Click or press enter to add an instruction to the card. Focus on the ingredient and click or press space to delete it.">ADD</div>
+    </div>
+    <section class="inputResults" id="inputResults2"></section>
+    <div class="finalButtons">
+        <button id="reset" aria-labelledby="reset-button" aria-roledescription="Click or press enter to clear all fields.">Reset</button>
+        <button id="save" aria-labelledby="save-button" aria-roledescription="Click or press enter to save an html/website copy of your recipe.">Save recipe card</button>
+    </div>
+    <div id="error-message" aria-live="assertive"></div>
+</body>
+</html>

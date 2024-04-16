@@ -1,0 +1,35 @@
+
+:root{
+    --background-color: white; 
+    --text-color: black; 
+    --background-color-2: black; 
+    --text-color-2: white; 
+    --background-color-3: gray; 
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.custom-button {
+    display: flex; 
+    position: absolute; 
+    border-radius: 16px; 
+    transition: all .2s ease; 
+    cursor: pointer; 
+    font-size: 24px; 
+    align-items: center; 
+    text-transform: uppercase;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.custom-button:hover{
+    background-color: var(--background-color-2);
+    color: var(--text-color-2); 
+}
+
+.custom-button:active{
+    transition: all; 
+    background-color: green; 
+}

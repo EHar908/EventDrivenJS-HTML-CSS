@@ -1,0 +1,39 @@
+:root{
+    --background-color: rgb(64, 163, 64); 
+    --text-color: white; 
+    --background-color-2: rgb(192, 43, 43); 
+    --text-color-2: black; 
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.floating-action-button {
+    display: flex; 
+    position: absolute; 
+    border-radius: 16px; 
+    box-shadow: 0 7px #999;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all .3s ease; 
+    cursor: pointer; 
+    font-size: 24px; 
+    align-items: center; 
+    text-transform: uppercase;
+}
+
+.floating-action-button:hover{
+    background-color: var(--background-color-2);
+    color: var(--text-color-2); 
+}
+
+.floating-action-button:active{
+    transition: all; 
+    background-color: green; 
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Might be good to also have an animation made for when it clicks; otherwise, it seems good as is

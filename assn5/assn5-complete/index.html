@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>CSS Component Library</title>
+</head>
+<body>
+    <div id="header">Rainforest CSS Library</div>
+    <div class="examples-column">
+        <div>
+            <h2 class="text"><b>Navbar</b></h2>
+            <div class="text">Example</div>
+            <div class="example">
+                <nav class="navbar">
+                    <section class="navbar-title-section" aria-labelledby="website-title">
+                        <button class="navbar-menu-button" id="navbar-menu-button" aria-labelledby="menu-button" aria-roledescription="Press press enter or click to activate.">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        Website Title
+                    </section>
+                    <section class="navbar-link-section">
+                        <a aria-labelledby="link-1" aria-roledescription="Click or press enter to open.">Link 1</a>
+                        <a aria-labelledby="link-2" aria-roledescription="Click or press enter to open.">Link 2</a>
+                        <a aria-labelledby="link-3" aria-roledescription="Click or press enter to open.">Link 3</a>
+                    </section>
+                </nav>
+            </div>
+            <div class="text">HTML</div>
+            <pre class="example-code" id="navbar-html"></pre>
+            <div class="text">CSS</div>
+            <pre class="example-code" id="navbar-css"></pre>
+            <div class="text">JS</div>
+            <pre class="example-code" id="navbar-js"></pre>
+
+
+            <h2 class="text"><b>Navigation Drawer</b></h2>
+            <div class="text">Example</div>
+            <div class="example" id="nav-drawer-border">
+                <div id="drawer-section">
+                    <button class="nav-button" id="nav-button" aria-labelledby="drawer-button" aria-roledescription="Click or press enter to open.">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+                
+                <nav class="nav-drawer" id="nav-drawer">
+                    <a aria-labelledby="home-link" aria-roledescription="Click or press enter to open.">Home</a>
+                    <a aria-labelledby="dashboard-link" aria-roledescription="Click or press enter to open.">Dashboard</a>
+                    <a aria-labelledby="profile-link" aria-roledescription="Click or press enter to open.">Profile</a>
+                    <a aria-labelledby="settings-link" aria-roledescription="Click or press enter to open.">Settings</a>
+                </nav>
+            </div>
+            <div class="text">HTML</div>
+            <pre class="example-code" id="navdrawer-html"></pre>
+            <div class="text">CSS</div>
+            <pre class="example-code" id="navdrawer-css"></pre>
+            <div class="text">JS</div>
+            <pre class="example-code" id="navdrawer-js"></pre>
+
+
+            
+            <h2 class="text"><b>Buttons</b></h2>
+            <div class="text">Example</div>
+            <div class="example">
+                <span id="buttons">
+                    <button class="material-symbols-outlined custom-button" id="custom-button" aria-labelledby="menu-button" aria-roledescription="Press press enter or click to activate.">menu</button>
+                    <button class="material-symbols-outlined floating-action-button" 
+                        id="floating-action-button" aria-labelledby="menu-button" aria-roledescription="Press press enter or click to activate.">add</button>
+                </span>
+            </div>
+            <div class="text">HTML</div>
+            <pre class="example-code" id="buttons-html"></pre>
+            <div class="text">CSS</div>
+            <pre class="example-code" id="buttons-css"></pre>
+            <div class="text">JS</div>
+            <pre class="example-code" id="buttons.js"></pre>
+
+
+
+            <h2 class="text"><b>Image Carousel</b></h2>
+            <div class="text">Example</div>
+            <div class="example">
+                <div class="carousel" aria-labelledby="image-carousel" aria-roledescription="Displays images in a continuous, repeating, horizontal slide.">
+                    <div class="carousel-slider" id="carousel-slider" aria-labelledby="image-carousel" aria-roledescription="Portrays images on an animated slide.">
+                        <img src="3.jpg" alt="" width="400px">
+                        <img src="1.jpg" alt="" width="400px">
+                        <img src="2.jpg" alt="" width="400px">
+                    </div>
+                </div>
+            </div>
+            <div class="text">HTML</div>
+            <pre class="example-code" id="image-html"></pre>
+            <div class="text">CSS</div>
+            <pre class="example-code" id="image-css"></pre>
+            <div class="text">JS</div>
+            <pre class="example-code" id="image-js"></pre>
+
+
+
+            <h2 class="text"><b>Loading Spinners</b></h2>
+            <div class="text">Example</div>
+            <div class="example">
+                <div class="loader-1" aria-labelledby="loader-1" aria-roledescription="Displays 3 dots going up and down, representing a program loading.">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="loader-2" aria-labelledby="loader-2" aria-roledescription="Displays 3 dots going up and down, representing a program loading. Hovering your cursor over the loader will increase its size.">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="loader-3" aria-labelledby="loader-3" aria-roledescription="Displays the word 'Loading...' going up and down, representing a program loading.">
+                    <div class="word">L</div>
+                    <div class="word">o</div>
+                    <div class="word">a</div>
+                    <div class="word">d</div>
+                    <div class="word">i</div>
+                    <div class="word">n</div>
+                    <div class="word">g</div>
+                    <div class="word">.</div>
+                    <div class="word">.</div>
+                    <div class="word">.</div>
+                </div>
+            </div>
+            <div class="text">HTML</div>
+            <pre class="example-code" id="loader-html"></pre>
+            <div class="text">CSS</div>
+            <pre class="example-code" id="loader-css"></pre>
+        </div>
+    </div>
+</body>
+</html>

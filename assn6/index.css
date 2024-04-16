@@ -1,0 +1,126 @@
+:root{
+    --background-color: #0E0004; 
+    --text-color: #B91372; 
+    --background-color-2: #31081F; 
+    --text-color-2: #e99700; 
+    --text-color-3: #6761A8; 
+    --box-color: #FFAFCC; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;  
+    height: 100vh; 
+    margin: 0; 
+    padding: 16px 16px; 
+    background-color: var(--background-color);
+    transition: all .3s ease; 
+}
+
+/* Header */
+#header { 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column-reverse; 
+    font-size: 3em;
+    margin: 16px; 
+    color: var(--text-color); 
+}
+
+/* Entire search-bar */
+.inputSearch {
+    display: flex; 
+    align-self: center; 
+    height: 40px;
+    min-width: clamp(280px, 50%, 800px);
+    border-radius: 32px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24), 0px 1px 3px rgba(0, 0, 0, 0.48);
+    background: rgb(192, 182, 182); 
+}
+
+.moveUp{
+    justify-content: flex-start;  
+}
+
+/* Do I need a move quote up here? */
+
+/* Text-portion of search-bar */
+.inputSearch input{
+    flex: 1;  
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: none; 
+    padding: 16px; 
+}
+
+/* Search Button */
+#searchButton{ 
+    
+    border: none; 
+    padding-left: 12px; 
+    border-top-left-radius: 32px; 
+    border-bottom-left-radius: 32px;
+    transition: all .2s ease; 
+}
+
+#searchButton:active{
+    transition: all; 
+    background-color: var(--box-color); 
+    font-size: 1.3em; 
+}
+/* TO DO: 
+    This needs to also work when someone presses enter on the button. */
+#pinned{
+    min-width: clamp(280px, 50%, 800px);
+}
+
+#notPinned {
+    min-width: clamp(300px, 50%, 800px);
+}
+
+.quoteBox {
+    background: var(--background-color-2); 
+    border-radius: 32px;
+    margin: 8px; 
+    padding-left: 64px; 
+    padding-right: 64px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24), 0px 1px 3px rgba(0, 0, 0, 0.48);
+    color: var(--text-color); 
+}
+
+.pinnedBox {
+    background: var(--text-color-3); 
+    color: var(--text-color-2);
+}
+
+.quote{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    font-size:24px; 
+    font-weight: bold; 
+    align-content: center; 
+    text-align: center; 
+    
+}
+
+.author{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    display: flex; 
+    text-align: right; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    font-size: 16px; 
+   
+}
+
+.error{
+    background: var(--text-color-2);
+    font-weight: bold; 
+}

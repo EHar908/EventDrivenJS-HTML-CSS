@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Applications</title>
+    <script src = "madlibs.js" defer></script>
+    <script src = "morgage.js" defer></script> 
+</head>
+<body>
+    <h1>Mini Applications</h1>
+    <h2>Mad Libs</h2>
+        Name
+        <div>
+            <input id="name" type="text"/>
+        </div>
+        Verb (past tense)
+        <div>  
+            <input id="verb1" type="text"></input>
+        </div>
+        Verb (past tense)
+        <div>
+            <input id="verb2" type="text"></input>
+        </div>
+        Object
+        <div>
+            <input id="madObj" type="text"></input>
+        </div>
+        Adjective
+        <div>
+            <input id="adj" type="text"></input>
+        </div>
+
+        <button id="mad-button">Generate</button>
+        <div id = "madlib-story">
+        </div>
+    <h2>Mortgage Calculator</h2>
+        Loan Amount
+        <div>
+            <input value="340000" id="loan" type="text"/>
+        </div>
+        Annual Interest Rate (%)
+        <div>  
+            <input value="5.5" id="interest" type="text"/>
+        </div>
+        Number of years
+        <div>
+            <input value="30" id="years" type="text"/>
+        </div>
+        Monthly Payment:
+        <div id = "mort-result"> </div>
+</body>
+</html>

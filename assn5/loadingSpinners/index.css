@@ -1,0 +1,117 @@
+:root {
+    --dot-color: black; 
+    --text-color: black; 
+}
+
+@keyframes dots {
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}
+
+.loader-1 {
+    display: flex; 
+    gap: 16px; 
+    margin: 32px; 
+}
+
+.dot {
+    background-color: var(--dot-color); 
+    width: 64px; 
+    height: 64px; 
+    border-radius: 32px; 
+    animation: dots; 
+    animation-duration: 1s; 
+    animation-timing-function: ease; 
+    animation-iteration-count: infinite; 
+}
+
+.dot:nth-child(2) {
+    animation-delay: .33s; 
+}
+
+.dot:nth-child(3) {
+    animation-delay: .66s; 
+}
+
+/* Loader spinner 1 above */
+/* Everything here looks fine */
+
+.loader-2{
+    display: flex; 
+    gap: 16px; 
+    margin: 32px;
+}
+
+.loader-2:hover .dot{
+    width: 96px; 
+    height: 96px; 
+    border-radius: 48px;  
+}
+
+.word{
+    font-size: 64px; 
+    color: var(--text-color); 
+    animation: dots; 
+    animation-duration: 1s; 
+    animation-timing-function: ease; 
+    animation-iteration-count: infinite; 
+}
+
+.word:nth-child(2) {
+    animation-delay: .11s; 
+}
+
+.word:nth-child(3) {
+    animation-delay: .22s; 
+}
+
+.word:nth-child(4) {
+    animation-delay: .33s; 
+}
+
+.word:nth-child(5) {
+    animation-delay: .44s; 
+}
+
+.word:nth-child(6) {
+    animation-delay: .55s; 
+}
+
+.word:nth-child(7) {
+    animation-delay: .66s; 
+}
+
+.word:nth-child(8) {
+    animation-delay: .77s; 
+}
+
+.word:nth-child(9) {
+    animation-delay: .88s; 
+}
+
+.word:nth-child(10) {
+    animation-delay: .99s; 
+}
+
+
+/* Ideas: 
+1. If the user inputs a single word, we need a means of having the whole text go up and down. 
+Unless there's a straight-forward way of doing this, likely I'll have to splice the word into letters 
+and then animate each one individually. So the design needs to be flexible enough to accept any 
+size of words. 
+2. Perhaps inserting just the letters in the html file is the way to do it.  */
+
+.loader-3{
+    display: flex; 
+    gap: 16px; 
+    margin: 32px;
+}
+
+
+/* How do you increase/decrese the size percentage-wise? */
+
+
