@@ -6,6 +6,7 @@ async function setUpApp() {
 
 async function getQuote(){
     document.getElementById("body").classList.add("moveUp");
+    // If the user attempts to enter with an empty input. 
     if (document.getElementById("searchBar").value === ""){
         document.getElementById("notPinned").innerHTML = ""; 
         const div = document.createElement("div"); 
@@ -20,6 +21,7 @@ async function getQuote(){
         document.getElementById("notPinned").appendChild(div); 
         div.classList.add("error"); 
     }
+    //If the user enters in a string/input. 
     else {
         document.getElementById("notPinned").innerHTML = ""; 
 
@@ -48,6 +50,9 @@ async function printQuote(quote){
 
     let pin = false; 
 
+    //If the user clicks on a quote-box, it will be added to the pinnedBox class and appear at the top of the quotes list. 
+    //While within the pinnedBox class, besides refreshing/restarting the application, the selected quotes boxes will stay pinned to the top as you continue searching other quotes. 
+    //If you click on a pinnedBox, you will remove it from the pinnedBox class.
     div.addEventListener("click", () => {
         div.remove(); 
         if (pin) {
